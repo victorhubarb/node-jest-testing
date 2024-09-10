@@ -1,4 +1,4 @@
-# Jest/Node.js testing <a name="readme-top"></a>
+# Bookstore API Testing <a name="readme-top"></a>
 ![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
 
 ## Table of Contents 
@@ -11,46 +11,30 @@
 * [Technologies Used](#technologies-used)
 
 ## Project Description
-This project focuses on implementing comprehensive testing in Node.js applications. It covers various types of testing such as static, unit, and integration tests. The project utilizes tools like Jest for unit testing and SuperTest for integration testing, providing a robust framework for ensuring code reliability and quality.
-Throughout the development of this project, a testing culture has been established, emphasizing the importance of code consistency and error prevention. Various testing techniques and best practices have been integrated, such as using ESLint for static code analysis, Jest for unit tests, and SuperTest for simulating HTTP requests in integration tests.
+This project focuses on implementing various testing strategies for a REST API that manages a bookstore system. The API includes functionality for managing books, authors, and publishers. This project leverages testing frameworks and tools such as Jest and SuperTest to ensure the reliability and maintainability of the API, using static analysis, unit testing, and integration testing.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features
 - **Static Testing**:
-  - Implements static code analysis using ESLint to ensure code follows established conventions and best practices.
-  - Detects issues like missing modules or poor code clarity without executing the code.
-
+  - ESLint is used for static code analysis to ensure code follows best practices and proper formatting without executing the code.
+  
 - **Unit Testing**:
-  - Implements unit tests for validating the behavior of small, isolated parts of the application.
-  - Uses Jest as the primary testing framework for writing and running unit tests.
-  - Includes native assertion methods to compare values and analyze test results.
+  - Jest is employed to create unit tests, focusing on the behavior of small, isolated parts of the bookstore API.
+  - Native assertion methods are used for comparing values and testing expected outputs.
 
 - **Integration Testing**:
-  - Tests combined modules and their interactions using SuperTest to simulate HTTP requests.
-  - Ensures different parts of the application work seamlessly together.
+  - Integration tests are run using SuperTest, simulating HTTP requests to ensure the proper interaction between different parts of the API.
 
-- **Test Coverage and Reporting**:
-  - Uses Jest's `--coverage` flag to generate test coverage reports, helping identify untested code paths.
-  - Highlights potential false positives even with high coverage percentages.
-
-- **Advanced Jest Features**:
-  - Utilizes `jest.spyOn()` to monitor method calls and enhance assertion capabilities.
-  - Applies `jest.fn()` to mock functions and simulate specific behaviors during testing.
-  - Runs asynchronous tests using `then` and `await` for handling promises.
-  - Leverages `test.each()` to simplify repetitive test cases with dynamic inputs.
-
-- **Test Skipping and Hooks**:
-  - Incorporates the `skip` method to temporarily bypass specific tests during development.
-  - Configures hooks (beforeAll, afterAll) to handle setup and teardown for test environments.
+- **Test Coverage**:
+  - Jest’s `--coverage` flag is used to generate test coverage reports, helping identify untested portions of the API.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
 
 ### Prerequisites
-- **Node.js**: Required for running the project. [Install Node.js here](https://nodejs.org/en/download/).
-- **Jest**: The testing framework used in this project. Install it by following the official [Jest documentation](https://jestjs.io/docs/en/getting-started).
-- **SuperTest**: Required for integration testing, which can be installed via npm.
-
+- **Node.js**: You need Node.js installed to run this project. [Download Node.js here](https://nodejs.org/en/download/).
+- **Jest**: This project uses Jest for testing. You can install it by following the [Jest documentation](https://jestjs.io/docs/en/getting-started).
+- **SuperTest**: Required for running integration tests.
 
 ### Getting the Code
 You can obtain the source code of the project in two ways:
@@ -66,29 +50,26 @@ You can obtain the source code of the project in two ways:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Running the Project
-Once you have the project setup, follow these steps to run the application:
+After downloading the project, follow these steps to set it up and run the tests:
 - **Install Dependencies**:
   ```bash
-  # Navigate to the project directory if you haven't already
-  cd node-testing-course
-
-  # Install the necessary packages
   npm install
 
 - **Run the Tests**:
   ```bash
-  # Run all tests
   npm test
 
-  # Generate coverage report
+- **Generate coverage report**:
+  ```bash
   npm test -- --coverage
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Technologies Used
-
-- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine, used for building the backend of the application.
-- **Jest**: A JavaScript testing framework used for running unit tests and generating test coverage reports.
-- **SuperTest**: A module used to test HTTP assertions, particularly useful for testing integration with Node.js servers.
-- **ESLint**: A static code analysis tool for identifying problematic patterns found in JavaScript code.
-- **Express.js**: A minimal and flexible Node.js web application framework used for handling routes and server logic.
+- **Node.js**: JavaScript runtime for building the server-side API.
+- **Express**: Web framework for Node.js used for handling API routes and logic.
+- **Jest**: JavaScript testing framework used for unit tests and coverage reports.
+- **SuperTest**: Tool for testing HTTP assertions, used in integration testing.
+- **Knex.js**: SQL query builder used to interact with the SQLite database.
+- **SQLite3**: Database engine used for storing the bookstore data.
+- **ESLint**: Static code analysis tool to ensure code quality.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
