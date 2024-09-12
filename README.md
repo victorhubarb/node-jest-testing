@@ -1,8 +1,8 @@
-# Bookstore API Testing <a name="readme-top"></a>
+# Jest Testing <a name="readme-top"></a>
 ![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
 
 ## Introduction
-**Node Jest Testing** is a project set up to perform automated tests on a Node.js application using the **Jest** framework. It includes examples of unit and integration tests, showing how to configure and run tests to ensure the quality and functionality of the code.
+**Jest Testing** is a project set up to perform automated tests on a Node.js application using the **Jest** framework. It includes examples of unit and integration tests, showing how to configure and run tests to ensure the quality and functionality of the code.
 
 ## Table of Contents
 - [Installation](#installation)
