@@ -4,6 +4,8 @@
 
 A small REST API for a bookstore (books, authors, publishers) built with Express and SQLite, used to practice automated testing with Jest and Supertest. The tests cover the publishers (`editoras`) resource, both the model and the HTTP routes.
 
+> Built as hands-on practice while following an Alura course.
+
 ## What's tested
 
 - **Model, unit level** (`src/test/models/editora.test.js`): that an `Editora` is built with the right fields, and a mocked `salvar()` using `jest.fn().mockReturnValue(...)`, so no database is touched. Two further tests that hit the real database are marked `it.skip`.
