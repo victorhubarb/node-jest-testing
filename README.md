@@ -1,5 +1,7 @@
 # Node Jest Testing
 
+[![Tests](https://github.com/victorhubarb/node-jest-testing/actions/workflows/test.yml/badge.svg)](https://github.com/victorhubarb/node-jest-testing/actions/workflows/test.yml)
+
 A small REST API for a bookstore (books, authors, publishers) built with Express and SQLite, used to practice automated testing with Jest and Supertest. The tests cover the publishers (`editoras`) resource, both the model and the HTTP routes.
 
 ## What's tested
